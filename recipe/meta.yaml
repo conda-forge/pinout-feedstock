@@ -1,5 +1,5 @@
 {% set name = "pinout" %}
-{% set version = "0.0.20" %}
+{% set version = "0.1.1" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pinout-{{ version }}.tar.gz
-  sha256: 1859c8a0297542a236d9f92b55459226bb8d702c4ae43d9aad3e9a090d25ed17
+  sha256: 4cbe84932e6b83879c5b1a0bc1fd490a883c71a7db5d364e1f47f032dd3afad0
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
